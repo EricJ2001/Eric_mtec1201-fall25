@@ -86,7 +86,7 @@ function Mouth() {
   line(280, 370 + mouthOpen, 520, 370 + mouthOpen); // bottom lip
 
   // text hello
-  if (mouthOpen > 5) {
+  if (mouthOpen > 15) {
     noStroke();
     fill(255);
     text("HELLO", width / 2, 370);
