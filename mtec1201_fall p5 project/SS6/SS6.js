@@ -312,5 +312,5 @@ function mouseMoved() {
 function mousePressed() {
   sparkleX.push(mouseX);  
   sparkleY.push(mouseY);  
-  sparkleLife.push(255);  // start fully visible
+  sparkleLife.push(255);  
 }
