@@ -29,9 +29,9 @@ let targetRY = 0;
 let nextWanderChange = 0;  
 
 
-let sparkleX = [];   // NEW
-let sparkleY = [];   // NEW
-let sparkleLife = []; // NEW life/opacity for sparkles
+let sparkleX = [];   
+let sparkleY = [];   
+let sparkleLife = []; 
 
 //  array of mood words
 let moodWords = ["HAPPY", "CURIOUS", "CHILL", "SLEEPY"];
@@ -62,7 +62,7 @@ function draw() {
   // new pattern design
   drawPatterns();
 
-  drawSparkles(); //  draws sparkles from arrays
+  drawSparkles(); 
   drawMoodWord(); // draws mood words above smiley
 
   Eyes(); 
@@ -147,12 +147,12 @@ function drawPatterns() {
 function drawSparkles() {
   noStroke();
   for (let i = sparkleX.length - 1; i >= 0; i--) {
-    fill(255, 255, 200, sparkleLife[i]); // fade using alpha
+    fill(255, 255, 200, sparkleLife[i]); 
     ellipse(sparkleX[i], sparkleY[i], 10, 10);
 
     sparkleLife[i] -= 3; // fade speed
 
-    // remove sparkles that are fully faded
+    // remove sparkles 
     if (sparkleLife[i] <= 0) {
       sparkleX.splice(i, 1);
       sparkleY.splice(i, 1);
@@ -212,7 +212,7 @@ function Eyes() {
     d = constrain(mouseX - leftX, -maxEyeMove, maxEyeMove); 
     y = constrain(mouseY - eyeY, -maxEyeMove, maxEyeMove);  
     r = constrain(mouseX - rightX, -maxEyeMove, maxEyeMove); 
-    x = constrain(mouseY - eyeY, -maxEyeMove, maxEyeMove);   // <-- fixed here
+    x = constrain(mouseY - eyeY, -maxEyeMove, maxEyeMove);  
   }
 
   //  pupil color changes based on where the eyes are looking 
