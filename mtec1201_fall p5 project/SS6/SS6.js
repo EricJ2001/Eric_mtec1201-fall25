@@ -2,8 +2,9 @@
 // press key 'b' to change the background color
 // press space bar to make the mouth open
 // I am just improving my smilie from the previous assignment
-// press key 1-4 to change mood wood
+// press key 1-4 to change mood word
 // when you click anywhere with the mouse it makes sparkles appear
+// my friend helped me make some of the code so i give some credit to him
 
 let bg = 20;        // background color  
 let mouthOpen = 0;  // how much the mouth opens
