@@ -35,7 +35,7 @@ let sparkleLife = [];
 
 //  array of mood words
 let moodWords = ["HAPPY", "CURIOUS", "CHILL", "SLEEPY"];
-let currentMoodIndex = 0; // NEW index to track mood
+let currentMoodIndex = 0; 
 
 function setup() {
   createCanvas(800, 600);
@@ -59,7 +59,7 @@ function draw() {
     nextWanderChange = millis();
   }
 
-  // new pattern design
+  
   drawPatterns();
 
   drawSparkles(); 
